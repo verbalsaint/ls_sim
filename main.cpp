@@ -1,10 +1,12 @@
 #define _XOPEN_SOURCE 600 // enable nftw , >500 , S_IFSOCK, >600
+#define SUTRA
 #include "mainheader.h"
 #include "Exception.h"
 #include "ArgParser.h"
 #include "BuildTree.h"
 #include "PrintEng.h"
 #include "verbalsaint.h"
+
 
 
 using namespace std;
@@ -39,8 +41,11 @@ int callBackFun(const char* pathname,const struct stat* statbuf, int typeflag,st
   return 0;
 }
 
+BUDDHA
 
 int main(int argc, char *argv[]){
+
+  cout << Buddha << endl;
   int flags =0;
   flags |= FTW_PHYS; //Do not dereference symbol links
 

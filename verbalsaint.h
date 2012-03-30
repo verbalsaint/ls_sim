@@ -13,10 +13,8 @@
 
 #ifdef SUTRA
 #define BUDDHA namespace { \
-do{ \
 const char* Buddha = "一切有為法 如夢幻泡影 如露亦如電 應做如是觀"; \
 const char* Sutra = "序分 正宗分 流通分"; \
-}while(0); \
 }
 #endif
 
