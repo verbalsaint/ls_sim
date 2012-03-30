@@ -1,0 +1,45 @@
+Write a program to enumerate the directory structure of the given directory.
+Input:
+                Root directory path.
+                
+Output:
+Tree like structure with following information on each line
+
+a.       Directory/File name
+b.      Size of a file or directory. 
+	For directory, size should reflect the cumulative sum of all its subdirectories and files within.
+E.g.:
+Directory structure:
+            C:\D1\f1               (100 Bytes)
+C:\D1\f2               (300 Bytes)
+C:\D2\f3               (100 Bytes)
+C:\D2\D3\f4       (250 Bytes)
+Input: C:\
+Expected output:
+                C                             750 Bytes            
+                |--D1                     400 Bytes
+                |----f1                   100 Bytes
+                |----f2                   300 Bytes
+                |--D2                     350 Bytes
+                |----f3                   100 Bytes
+                |----D3                  250 Bytes
+                |------f4                250 Bytes
+                
+Instructions:
+1.      Use Windows/Unix platform as per your convenience. done
+2.      Try to use C++ concepts wherever possible. done
+3.      Try to use STL data structures wherever possible. done
+
+4.      No assumptions should be made what so ever in terms of depth or number of files in the input directory. This program should work against any directory with any number of files within it.
+done
+
+5.      All error conditions must be taken care of and the program should exit gracefully in case of error. done
+
+6.      Do not use any shell commands for fetching size of files or directories. All computations must be programmatic. done
+
+7.      Do not use any third party libraries that are not part of CLR. done
+
+8.      Preferably test out the program on a large file system (ie C:/ folder on windows or root folder on unix) done
+
+9.      Source code must be adequately commented and should be written in a readable manner.
+  done

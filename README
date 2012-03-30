@@ -1,0 +1,10 @@
+The project is using qmake
+type:
+# qmake -makefile ls_sim.pro
+then
+# make
+will generate binary executable file:
+# ls_sim
+
+This code uses features in C++11
+make sure the compiler is with g++'s version above 4.6
